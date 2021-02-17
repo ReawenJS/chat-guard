@@ -4,7 +4,7 @@ const { DatabaseManager } = require("@aloshai/mongosha");
 const config = require('./config.json');
 DatabaseManager.connect(config.MONGOCONNECTURL)
 const db = DatabaseManager.getDatabase("CHATGUARD")
-//HERHANGİ BİR HATA İLE KARŞILAŞIRSANIZ Klanter#9898 NİCKLİ DISCORD HESABIMA YAZABİLİRSİNİZ
+//HERHANGİ BİR HATA İLE KARŞILAŞIRSANIZ OrcunKagan#9891 NİCKLİ DISCORD HESABIMA YAZABİLİRSİNİZ
 
 
 
@@ -26,7 +26,7 @@ client.on("message", message => {
 .setColor('RANDOM')
 .setAuthor(message.member.user.username, message.member.user.displayAvatarURL({dynamic: true, format: "png", size: 1024}))
 .addField('⚔️ - Komutlar Ve Kullanımları',`
-  **Whitelist** = __${config.prefix}whitelist ekle/kaldır @user/userid__
+  **Whitelist** = __${config.prefix}whitelist ekle/kaldır @User/UserID__
   **Link koruma** = __${config.prefix}reklamakoruma aç/kapat__
   **Küfür koruma** = __${config.prefix}küfürkoruma aç/kapat__
   **Spam koruma** = __${config.prefix}spamkoruma aç/kapat__
